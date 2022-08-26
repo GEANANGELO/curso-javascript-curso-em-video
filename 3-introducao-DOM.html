@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: rgb(22, 136, 189);
+            color: white;
+            font: normal 18pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="cabecalho">Iniciando estudos com DOm</h1>
+    <p name ="primeiro">aqui vai o resultado</p>
+    <p class="segundo"> aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        var corpo = document.body
+        var h01 = document.getElementById('cabecalho')
+        var p1 = document.getElementsByName('primeiro')[0]
+        var p2 = document.getElementsByTagName('p')[1]
+        var div1 = window.document.querySelector('div#msg')
+        
+        corpo.style.background = 'orange'
+        
+        h01.innerText='TITULO'
+        h01.style.color= 'red'
+        document.write(h01.innerText = 'titulo principal')
+        document.write('<br><br>')
+        
+        p1.style.color = 'purple'
+        p1.innerText='paragrafo 0'
+        document.write(p1.innerText = 'paragrafo 01')
+        document.write('<br><br>')
+        
+        p2.style.color='green'
+        p2.innerText = 'segundo paragrafo'
+        document.write('<br><br>')
+       
+        document.write(p1.innerHTML)
+        document.write('<br><br>')
+        document.write(p2.innerHTML)
+
+        document.write('<br><br>')
+        document.write('esta escrito assim no primeiro paragrafo:  '+ p1.innerHTML)      
+        
+        div1.style.background = 'red'
+        div1.innerText = 'aguardando comandos'
+       
+    </script>
+</body>
+</html>
