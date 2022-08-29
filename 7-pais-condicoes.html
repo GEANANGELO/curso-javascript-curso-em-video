@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>brasileiro ou estrangeiro?</h1>
+    País de origem: <input type="text" name="txtpais" id="txtpais"> 
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function verificar(){
+            var txtv = document.querySelector('input#txtpais');                     
+            var res = document.querySelector('div#res');
+            var pais = String(txtv.value.toUpperCase()); //usando toUpperCase() para tirar maiusc. e minusc.
+            res.innerHTML = `seu pais de origen é ${pais}, `;
+            if(pais == 'BRASIL'){
+                res.innerHTML+= ` você é brasileiro`;
+            }else{
+                res.innerHTML+= ` você é estrangeiro, seja bem vindo ao Brasil`;
+            }
+        }
+        
+
+    </script>
+    
+</body>
+</html>
