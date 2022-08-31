@@ -12,11 +12,11 @@ function verificar(){
     if(fano.value.length == 0 || Number(fano.value) > ano){
         alert('[ERRO] Verifique os dados e tente novamente!')
     }else {
-        var fsex = document.getElementsByName('radsex');//obter os elementos de Name="radsex"
-        var idade= ano - Number(fano.value);//(ano do sistema) - conversao para number (valor digitado do input)
+        var fsex = document.getElementsByName('radsex');  //obter os elementos de Name="radsex"
+        var idade= ano - Number(fano.value);  //(ano do sistema) - conversao para number (valor digitado do input)
         var genero= '';  //a variavel começa vazia
-        var img = document.createElement('img') //esta criando a tag img 
-        img.setAttribute('id', 'foto') //atribuindo id='foto' para tag img
+        var img = document.createElement('img')  //esta criando a tag img 
+        img.setAttribute('id', 'foto')  //atribuindo id='foto' para tag img
         //se fsex de indice [0] == masculino estiver checado, FAÇA
         if(fsex[0].checked) {
             genero = 'homem'   //genero que é vazio recebe 'homem'
