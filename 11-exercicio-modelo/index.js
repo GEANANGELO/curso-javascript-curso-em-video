@@ -6,7 +6,7 @@ function carregar(){
     var img = document.getElementById('imagen');
     var data = new Date();
     var hora = data.getHours()
-    //var hora = 19;
+    //var hora = 18.20;
     msg.innerHTML = `agora são ${hora} horas`;
     if (hora >=0 && hora < 12) {
         img.src ='manha.jpg'
