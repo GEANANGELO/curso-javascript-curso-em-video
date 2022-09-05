@@ -5,7 +5,8 @@ while(c <= 5){
     c++
 }
 */
-//ABAIXO ESTRUTURA FOR
+
+ /* ABAIXO ESTRUTURA DO WHILE */   
 do{
     console.log(`oi ${c}`)
     c++
