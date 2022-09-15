@@ -11,11 +11,26 @@
    <script>
         var nome = prompt("qual e o seu nome?");
         var n1 = parseFloat(prompt("qual sua nota: "));
+        while(isNaN(n1)){
+            n1 = parseFloat(prompt("qual sua nota: "));
+        } 
+
         var n2 = parseFloat(prompt("qual sua nota: "));
+        while(isNaN(n2)){
+            n2 = parseFloat(prompt("qual sua nota: "));
+        }
+        
         var s = n1 + n2;
         var media = (n1 + n2)/2;
         alert(nome + " a soma das suas notas é: " + s + " e  sua media é: " + media);
         alert(`${nome} a soma das suas notas é ${s} e a sua media é ${media}`)
+
+        /*
+        while(isNaN(n1)){
+            n1 = parseFloat(prompt("qual sua nota: "));
+        }
+        alert(n1); 
+        */
    </script>
 </body>
 </html>
